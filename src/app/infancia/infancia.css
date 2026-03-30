@@ -1,0 +1,24 @@
+.subtitle{
+    color: #8500c3 ;    
+    font-weight: 700 ;   
+    margin-bottom: 1rem ; 
+    display: block;                
+}
+
+.mi-contenedor-morado {
+    padding: 1.5rem ; 
+    background-color: #6f42c1 ; 
+    border-radius: 1rem ; 
+    box-shadow: 0 4px 15px rgba(111, 66, 193, 0.2) ;
+    text-align: center; 
+}
+
+.mi-contenedor-morado .subtitle {
+    color: #ffffff ;
+    font-weight: bold;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+.display-6.fw-bold.text-dark {
+    color: #510087 !important; 
+}

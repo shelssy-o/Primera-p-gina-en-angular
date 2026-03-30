@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    <h3 class="biografia">BIOGRAFÍA</h3>
+  </div>
+</nav>
+
+<div class="container py-5 entorn">
+  <div class="text-center mb-5">
+    <h1 class="title-bio">Shelssy Yisell Ortiz Osorio</h1>
+    <p class="lead text-muted">Biografía en Angular</p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div *ngFor="let item of secciones" class="col">
+      
+      <div class="card h-100 shadow-lg border-0 bg-dark text-white rounded-4 overflow-hidden">
+        <div class="card-primary" style="height: 120px;"></div>
+        
+        <div class="card-body p-4 text-center">
+          <h3 class="card-title fw-bold text-uppercase h5 mb-3">{{ item.titulo }}</h3>
+          <p class="card-text text-secondary mb-4 small">{{ item.desc }}</p>
+          
+          <button 
+            (click)="irASeccion(item)" 
+              [disabled]="item.cargando"
+              class="btn btn-morado w-100 rounded-pill py-2 fw-bold text-uppercase d-flex align-items-center justify-content-center">
+  
+        <span *ngIf="item.cargando" class="spinner-border spinner-border-sm me-2" role="status"></span>
+  
+        <span>{{ item.cargando ? 'Cargando...' : item.link }}</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <hr class="my-5">
+  <div class="bg-light p-4 rounded-3 border shadow-sm">
+    <h4 class="text-muted mb-3 text-center small text-uppercase">Contenido de la sección seleccionada:</h4>
+    <router-outlet></router-outlet> 
+  </div>
+</div>
