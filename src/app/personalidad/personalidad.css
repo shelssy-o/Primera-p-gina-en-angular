@@ -18,6 +18,21 @@
     margin-bottom: 0;
     letter-spacing: 1px;
 }
-.display-6.fw-bold.text-dark {
-    color: #510087 !important; 
+.subtitle-second {
+    color: #510087 ; 
+    font-weight: 800 ; 
+}
+
+/* Clase para el contenedor de la foto */
+.image-animation {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Duración*/
+  cursor: pointer;/*cuando este sobre la imagen ocurra*/
+  overflow: hidden; 
+  border: 3px solid var(--color-morado); 
+}
+
+.image-animation:hover {/*lo que va a pasar cuando el mouse este encima*/
+  transform: scale(1.1) rotate(2deg); /*se encargara de que se agrande y gire poquito*/
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+  z-index: 10; 
 }

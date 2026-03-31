@@ -19,6 +19,21 @@
     margin-bottom: 0;
     letter-spacing: 1px;
 }
-.display-6.fw-bold.text-dark {
-    color: #510087 !important; 
+.subtitle-second {
+    color: #510087 ; 
+    font-weight: 800 ; 
+}
+/* Clase para el contenedor de la foto */
+.image-animation {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Duración de la animación */
+  cursor: pointer;
+  overflow: hidden; /* Para que la foto no se salga de los bordes si es redonda */
+  border: 3px solid var(--color-morado); /* Usando tu variable de color */
+}
+
+/* Lo que pasa cuando pones el mouse encima */
+.image-animation:hover {
+  transform: scale(1.1) rotate(2deg); /* Se agranda un 10% y gira un poquito */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Le da profundidad */
+  z-index: 10; /* Se pone por encima de las demás */
 }

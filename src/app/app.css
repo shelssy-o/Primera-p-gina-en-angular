@@ -9,7 +9,7 @@
 
 .title-bio {
     font-family: 'Gravitas One', serif;
-    font-weight: 400; 
+    font-weight: 700; 
     color: #510087;
     font-size: 3rem; 
     margin-bottom: 1.5rem;
@@ -43,10 +43,7 @@
 }
 
 
-.back-of-back {
-    background-color: #004891; 
-    min-height: 100vh; 
-}
+
 
 
 

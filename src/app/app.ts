@@ -34,4 +34,15 @@ export class AppComponent {
       console.log('Navegando a:', seccion.ruta);
     }, 1500);
   }
+
+isDarkMode = false;
+
+toggleDarkMode() {
+  this.isDarkMode = !this.isDarkMode;
+  const theme = this.isDarkMode ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', theme);
+}
+
+  
+  
 }
